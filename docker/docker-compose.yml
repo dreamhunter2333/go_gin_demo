@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+    go_gin_container:
+        image: go_gin_image:2.0
+        container_name: go_gin_container
+        command: /bin/sh -c "while sleep 1000; do :; done"
+        ports:
+            - "9999:9999"
+        volumes:
+            - ../:/opt/go_gin_demo

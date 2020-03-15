@@ -1,0 +1,17 @@
+{
+	"name": "Go Gin Demo",
+	"dockerComposeFile": [
+		"../docker/docker-compose.yml",
+	],
+	"service": "go_gin_container",
+	"workspaceFolder": "/opt/go_gin_demo/go_demo",
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/zsh",
+	},
+	"extensions": [
+		"octref.vetur",
+		"visualstudioexptteam.vscodeintellicode",
+		"ms-vscode.go",
+	],
+	"shutdownAction": "stopCompose",
+}

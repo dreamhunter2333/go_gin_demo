@@ -6,6 +6,6 @@ services:
         container_name: go_gin_container
         command: /bin/sh -c "while sleep 1000; do :; done"
         ports:
-            - "9999:9999"
+            - "9099:9099"
         volumes:
             - ../:/opt/go_gin_demo

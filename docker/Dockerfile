@@ -49,7 +49,8 @@ RUN export https_proxy=http://host.docker.internal:7890 http_proxy=http://host.d
     go get -v  github.com/sqs/goreturns &&  \
     go get -v  golang.org/x/lint/golint &&  \
     go get -u github.com/gin-gonic/gin
-
+RUN apt-get install gcc -y
+RUN apt-get update -y && apt-get upgrade -y
 ENTRYPOINT []
 
 WORKDIR /opt/go_gin_demo/go_demo
